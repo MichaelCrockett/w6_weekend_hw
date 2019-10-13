@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Bible Verses</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="book" class="primary">Book</label>
+          <input type="text" id="book" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="chapter" class="primary">Chapter</label>
+          <input type="text" id="chapter" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="verse" class="primary">Verse</label>
+          <input type="text" id="verse" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class="primary">Category</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Old Testament">Old Testament</option>
+            <option value="New Testament">New Testament</option>
+            <option value="Psalm">Psalm</option>
+            <option value="Proverb">Proverb</option>
+          </select>
+        </div>
+        <input type="submit" class="primary" value="Save this verse"/>
+      </div>
+    </form>
+
+
+    <h1>My Bible Verses</h1>
+    <div id="verses-list"></div>
+
+    <button id="delete-all">Delete all my verses</button>
+
+
+  </body>
+</html>
